@@ -5,18 +5,21 @@ const Contact = () => {
     <section className="py-16 bg-gradient-to-r from-gray-100 via-white to-gray-200">
       <div className="container mx-auto px-6">
         <h3 className="text-4xl font-extrabold text-center text-gray-900 mb-12">Ready To Work?</h3>
-        <form className="max-w-2xl mx-auto bg-white shadow-xl rounded-lg p-8">
+        <form action='https://formspree.io/f/xbljnqnz' method='post' className="max-w-2xl mx-auto bg-white shadow-xl rounded-lg p-8">
           <input
+          name='name'
             type="text"
             placeholder="Your Name"
             className="w-full mb-6 p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF8700] focus:border-[#FF8700] transition duration-200"
           />
           <input
+          name='email'
             type="email"
             placeholder="Your Email"
             className="w-full mb-6 p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF8700] focus:border-[#FF8700] transition duration-200"
           />
           <textarea
+          name='question'
             placeholder="Questions/Comments"
             className="w-full mb-6 p-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF8700] focus:border-[#FF8700] transition duration-200"
             rows="6"

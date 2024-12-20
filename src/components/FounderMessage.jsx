@@ -8,7 +8,7 @@ const FounderMessage = () => {
         {/* Text Section */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
           <h3 className="text-3xl md:text-4xl font-bold text-[#FF8700] leading-tight">
-            $85/hour for WHAT???
+            $55/hour for WHAT???
           </h3>
           <p className="text-lg md:text-xl font-medium text-gray-200">
             My first client was charged $85/hour for website updates. But you can get a fully optimized website with us for just $99/month!
@@ -27,7 +27,7 @@ const FounderMessage = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
-            src="https://via.placeholder.com/300"
+            src="p.png"
             alt="Founder"
             className="rounded-full shadow-2xl transform hover:scale-110 transition duration-300 w-40 h-40 md:w-56 md:h-56"
           />

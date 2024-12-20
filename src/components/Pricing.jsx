@@ -95,6 +95,14 @@ const Pricing = () => {
           </p>
           <a
             href="#contact"
+            onClick={() =>
+                window.open(
+                  "https://wa.me/923288768783?text=Hello%20I%20am%20interested%20in%20your%20services",
+                  "_blank"
+                )
+              }
+
+
             className="bg-[#FF8700] text-white hover:bg-[#FF7000] font-semibold py-3 px-8 rounded-lg transition duration-300"
           >
             Contact Support

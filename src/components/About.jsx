@@ -12,7 +12,7 @@ const About = () => {
           {/* Image Section */}
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="about.png"
               alt="Team working"
               className="rounded-xl shadow-lg w-full object-cover transform hover:scale-105 transition duration-300"
             />

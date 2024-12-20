@@ -40,7 +40,15 @@ const Navbar = () => {
         </nav>
 
         {/* Call to Action Button */}
-        <button className="bg-[#FF8700] hover:bg-[#FF7000] text-sm md:text-base px-5 py-2 rounded-full shadow-lg transition transform hover:scale-105">
+        <button
+          onClick={() =>
+            window.open(
+              "https://wa.me/923288768783?text=Hello%20I%20am%20interested%20in%20your%20services",
+              "_blank"
+            )
+          }
+          className="bg-[#FF8700] hover:bg-[#FF7000] text-sm md:text-base px-5 py-2 rounded-full shadow-lg transition transform hover:scale-105"
+        >
           Free Quote
         </button>
 
