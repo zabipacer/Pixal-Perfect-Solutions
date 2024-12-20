@@ -11,7 +11,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl mb-8">
-          Get the best deal at <span className="text-[#FF8700]">$99/month!</span>
+          Get the best deal at <span className="text-[#FF8700]">$29/month!</span>
         </p>
 
         {/* Call to Action Card */}

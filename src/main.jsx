@@ -8,11 +8,13 @@ import App from "./App"; // The home page
 
 import Layout from "./Layout";
 
-import Contact from "./components/Contact";
 
 import Portfolio from "./components/Portfolio";
 import Pricing from "./components/Pricing";
 import About from "./components/About";
+import GymCase from "./components/Gymcase";
+import TimberCase from "./components/timbercase";
+
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "about", // Dynamic route for species detail
         element: <About />, // Show SpeciesDetail component in the Layout
+      }, 
+      {
+        path: "gymcase", // Dynamic route for species detail
+        element: <GymCase />, // Show SpeciesDetail component in the Layout
+      },
+      {
+        path: "timbercase", // Dynamic route for species detail
+        element: <TimberCase />, // Show SpeciesDetail component in the Layout
       },
       // Add more routes here as needed
     ],
