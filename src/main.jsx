@@ -13,7 +13,7 @@ import Portfolio from "./components/Portfolio";
 import Pricing from "./components/Pricing";
 import About from "./components/About";
 import GymCase from "./components/Gymcase";
-import TimberCase from "./components/timbercase";
+import TimberCase from "./components/Timbercase";
 
 
 const router = createBrowserRouter([
