@@ -37,6 +37,9 @@ const Navbar = () => {
           <Link to="/about" className="hover:text-[#FF8700] transition font-medium">
             About
           </Link>
+          <Link to="/blog" className="hover:text-[#FF8700] transition font-medium">
+            Blogs
+          </Link>
         </nav>
 
         {/* Call to Action Button */}

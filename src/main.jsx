@@ -14,6 +14,8 @@ import Pricing from "./components/Pricing";
 import About from "./components/About";
 import GymCase from "./components/Gymcase";
 import TimberCase from "./components/Timbercase";
+import Blog from "./components/Blog";
+import BlogView from "./components/Blogview";
 
 
 const router = createBrowserRouter([
@@ -45,6 +47,16 @@ const router = createBrowserRouter([
         path: "timbercase", // Dynamic route for species detail
         element: <TimberCase />, // Show SpeciesDetail component in the Layout
       },
+      {
+        path: "blog", // Dynamic route for species detail
+        element: <Blog />, // Show SpeciesDetail component in the Layout
+      },
+      {
+path:"/blogs/:id",
+element: <BlogView/>
+
+
+      }
       // Add more routes here as needed
     ],
   },

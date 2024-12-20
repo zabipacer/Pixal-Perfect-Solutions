@@ -11,7 +11,7 @@ const FounderMessage = () => {
             $55/hour for WHAT???
           </h3>
           <p className="text-lg md:text-xl font-medium text-gray-200">
-            My first client was charged $85/hour for website updates. But you can get a fully optimized website with us for just $99/month!
+            My first client was charged $85/hour for website updates. But you can get a fully optimized website with us for just $29/month!
           </p>
           
           <div className="bg-[#FF8700] rounded-lg text-center py-4 px-6 shadow-xl max-w-xs mx-auto md:mx-0">
