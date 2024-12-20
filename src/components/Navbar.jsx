@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  // State to track mobile menu open/close
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Toggle mobile menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="bg-gradient-to-r from-[#007991] to-[#009FB7] text-white shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
@@ -15,20 +23,20 @@ const Navbar = () => {
           <span className="text-xl font-bold hidden md:block">Pixal Perfect</span>
         </a>
 
-        {/* Navigation Links */}
+        {/* Navigation Links for Desktop */}
         <nav className="hidden md:flex space-x-6 text-lg">
-        <Link to="/" className="hover:text-[#FF8700] transition font-medium">
-        Home
-      </Link>
-      <Link to="/portfolio" className="hover:text-[#FF8700] transition font-medium">
-        Portfolio
-      </Link>
-      <Link to="/pricing" className="hover:text-[#FF8700] transition font-medium">
-        Pricing
-      </Link>
-      <Link to="/about" className="hover:text-[#FF8700] transition font-medium">
-        About
-      </Link>
+          <Link to="/" className="hover:text-[#FF8700] transition font-medium">
+            Home
+          </Link>
+          <Link to="/portfolio" className="hover:text-[#FF8700] transition font-medium">
+            Portfolio
+          </Link>
+          <Link to="/pricing" className="hover:text-[#FF8700] transition font-medium">
+            Pricing
+          </Link>
+          <Link to="/about" className="hover:text-[#FF8700] transition font-medium">
+            About
+          </Link>
         </nav>
 
         {/* Call to Action Button */}
@@ -38,7 +46,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon */}
         <div className="flex md:hidden">
-          <button className="text-white focus:outline-none">
+          <button className="text-white focus:outline-none" onClick={toggleMenu}>
             <svg
               className="w-6 h-6"
               fill="none"
@@ -56,6 +64,24 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Links (only visible when isMenuOpen is true) */}
+      {isMenuOpen && (
+        <nav className="md:hidden bg-[#007991] text-white py-4 px-6 space-y-4">
+          <Link to="/" className="block hover:text-[#FF8700] transition font-medium">
+            Home
+          </Link>
+          <Link to="/portfolio" className="block hover:text-[#FF8700] transition font-medium">
+            Portfolio
+          </Link>
+          <Link to="/pricing" className="block hover:text-[#FF8700] transition font-medium">
+            Pricing
+          </Link>
+          <Link to="/about" className="block hover:text-[#FF8700] transition font-medium">
+            About
+          </Link>
+        </nav>
+      )}
     </header>
   );
 };
