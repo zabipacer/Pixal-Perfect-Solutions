@@ -91,6 +91,9 @@ const Navbar = () => {
           <Link to="/about" className="block hover:text-[#FF8700] transition font-medium">
             About
           </Link>
+          <Link to="/blog" className="hover:text-[#FF8700] transition font-medium">
+            Blogs
+          </Link>
         </nav>
       )}
     </header>
